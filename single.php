@@ -171,23 +171,6 @@ ob_start("fill_alt");
                         <?php } } wp_reset_query(); } ?>
             </div>
     </section>
-<!-- Face -->
-    <section class="faces faces-two" id="faces-two">
-        <div class="container">
-            <div class="face">
-                <div class="face__item">
-                    <p class="face__title">
-                        Автошкола для обучения
-                    </p>
-                    <p class="face__text">
-                        Автошкола (Северо-восточный округ) ул. Нестерова, 15
-                    </p>
-                    <div class="face__cont">
-                        <?php echo do_shortcode('[contact-form-7 id="32" title="Главная форма"]')?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <?php get_template_part('map')?>
-    </section>
+<?php include "inc/block_faces-two.php"; ?>
+
 <?php get_template_part('template-parts/footer')?>

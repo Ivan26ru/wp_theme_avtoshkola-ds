@@ -122,63 +122,7 @@ ob_start("fill_alt");
     </section>
 	<?php include "inc/block_offers.php"; ?>
 	<?php include "inc/block_instructors.php"; ?>
-<?php include "inc/block_courses-down.php"; ?>
-<!--News-->
-    <section class="news" id="news">
-        <div class="container">
-            <div class="new">
-                <?php
-                $categories = get_the_category($post->ID);
-                if ($categories) {
-                    $category_ids = array();
-                    foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+	<?php include "inc/block_courses-down.php"; ?>
+	<?php include "inc/block_faces-two.php"; ?>
 
-                    $args=array(
-                        'category__in' => $category_ids,
-                        'post__not_in' => array($post->ID),
-                        'showposts'=>5,
-                        'orderby'            => 'rand',
-                        'caller_get_posts'=>1
-                    );
-                    $my_query = new wp_query($args);
-                    if( $my_query->have_posts() ) {
-                        while ($my_query->have_posts()) {
-                            $my_query->the_post();
-                            ?>
-                            <div class="new__item">
-                                <a href="<?php the_permalink() ?>">
-                                    <div class="new__photo">
-                                        <div id="cat-image-miniature">
-                                            <?php if ( has_post_thumbnail() ) {
-                                                the_post_thumbnail();
-                                            } else { ?>
-                                                <img src="<?php bloginfo('template_directory'); ?>/img/dont.png" alt="<?php the_title(); ?>" />
-                                            <?php } ?>
-                                        </div>
-                                    </div>
-                                    <span class="new__name"><?php the_title() ?></span>
-                                </a>
-                            </div>
-                        <?php } } wp_reset_query(); } ?>
-            </div>
-    </section>
-<!-- Face -->
-    <section class="faces faces-two" id="faces-two">
-        <div class="container">
-            <div class="face">
-                <div class="face__item">
-                    <p class="face__title">
-                        Автошкола для обучения
-                    </p>
-                    <p class="face__text">
-                        Автошкола (Северо-восточный округ) ул. Нестерова, 15
-                    </p>
-                    <div class="face__cont">
-                        <?php echo do_shortcode('[contact-form-7 id="32" title="Главная форма"]')?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <?php get_template_part('map')?>
-    </section>
 <?php get_template_part('template-parts/footer')?>
