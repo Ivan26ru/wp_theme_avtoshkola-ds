@@ -91,27 +91,8 @@ ob_start("fill_alt");
 		</div>
 	</section>
 <?php include "inc/block_places.php"; ?>
-<!-- Licenses -->
-	<section class="licenses" id="licenses">
-		<div class="container">
-			<div class="license">
-				<p class="license__title title">
-					Лицензии
-				</p>
-				<div class="license__cont">
-					<?php if( have_rows('license', 'option') ): ?>
-		                <?php while( have_rows('license', 'option') ): the_row();
-		                   $icon = get_sub_field('license_photo', 'option');
-		                    ?>
-		                    <div class="license__item">
-		                    	<img src="<?php echo $icon; ?>" alt=""/>
-		                    </div>
-		                <?php endwhile; ?>
-		            <?php endif; ?>
-				</div>
-			</div>
-		</div>
-	</section>
+<?php include "inc/block_licenses.php"; ?>
+
 <!--Feedback-->
 <section class="feedbacks" id="feedbacks">
     <div class="container">
