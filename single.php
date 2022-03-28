@@ -95,40 +95,7 @@ ob_start("fill_alt");
     </section>
 <?php include "inc/block_places.php"; ?>
 <?php include "inc/block_licenses.php"; ?>
-	<!--Feedback-->
-    <section class="feedbacks" id="feedbacks">
-        <div class="container">
-            <div class="feedback">
-                <p class="feedback__title title">Рейтинг и отзывы Автошколы</p>
-                <div class="feedback__cont">
-                    <?php if( have_rows('feedback', 'option') ): ?>
-                        <?php while( have_rows('feedback', 'option') ): the_row();
-                            $name = get_sub_field('feedback_name', 'option');
-                            $text = get_sub_field('feedback_text', 'option');
-                            $img = get_sub_field('feedback_img', 'option');
-                            ?>
-                            <div><div class="feedback__item">
-                                    <img class="feedback__photo" src="<?php echo $img; ?>" alt=""/>
-                                    <div class="feedback__info">
-                                        <p class="feedback__name"><?php echo $name; ?></p>
-                                        <p class="feedback__text"><?php echo $text; ?></p>
-                                        <div class="feedback__down">
-                                            <?php if( have_rows('feedback_z', 'option') ): ?>
-                                                <?php while( have_rows('feedback_z', 'option') ): the_row();
-                                                    $icon = get_sub_field('feedback_img', 'option');
-                                                    ?>
-                                                    <img src="<?php echo $icon; ?>" alt=""/>
-                                                <?php endwhile; ?>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                </div></div>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                </div>
-            </div>
-        </div>
-    </section>
+<?php include "inc/block_feedbacks.php"; ?>
 	<?php include "inc/block_offers.php"; ?>
 	<?php include "inc/block_instructors.php"; ?>
 <?php include "inc/block_courses-down.php"; ?>
