@@ -126,17 +126,7 @@ ob_start("fill_alt");
                         <?php if ( function_exists( 'dimox_breadcrumbs' ) ) dimox_breadcrumbs(); ?>
                         <?php the_content(); ?>
                     </div>
-                    <div class="sidebar-two">
-                        <div class="sidebar-two__cont" id="sidebar-two-fixed">
-                            <div class="sidebar-two__info">
-                                <p class="sidebar-two__title">ДядяСтепа</p>
-                                <span class="sidebar-two__red">опыт более 10 лет</span>
-                                <span>ИНН 9715006367</span>
-                                <span>КПП 771501001</span>
-                            </div>
-                            <?php echo do_shortcode('[contact-form-7 id="2106" title="Обучение"]')?>
-                        </div>
-                    </div>
+					<?php include "inc/block_sidebar-two.php"; ?>
                 </div>
             </div>
         </div>
