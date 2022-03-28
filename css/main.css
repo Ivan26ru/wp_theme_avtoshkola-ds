@@ -2759,3 +2759,7 @@ br {
 }
 
 
+.sidebar__fixed .sticky .sidebar__list-materialy,
+.sidebar__fixed .stop .sidebar__list-materialy{
+    display: none;
+}

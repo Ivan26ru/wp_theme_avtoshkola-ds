@@ -28,7 +28,7 @@
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</ul>
-		<ul class="sidebar__list">
+		<ul class="sidebar__list sidebar__list-materialy">
 			<?php if( have_rows('menu-three', 'option') ): ?>
 				<?php while( have_rows('menu-three', 'option') ): the_row();
 					$text = get_sub_field('menu_text-three', 'option');
