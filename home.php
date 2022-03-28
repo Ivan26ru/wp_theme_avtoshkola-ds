@@ -2,9 +2,9 @@
 <!-- Template Name: Главная
 Template Post Type: post, page, product
  -->
-<?php include "inc/func_fill_alt.php"; ?>
+<?php include TEMPLATEPATH . "/inc/func_fill_alt.php"; ?>
  <?php get_template_part('template-parts/header')?>
-<?php include "inc/block_faces-one.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_faces-one.php"; ?>
 
 <!--Courses-->
     <section class="courses" id="courses">
@@ -196,8 +196,8 @@ Template Post Type: post, page, product
         </div>
     </div>
 </section>
-<?php include "inc/block_licenses.php"; ?>
-<?php include "inc/block_feedbacks.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_licenses.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_feedbacks.php"; ?>
 <!--Reviews-->
     <section class="reviews" id="reviews">
     <div class="container">
@@ -234,8 +234,8 @@ Template Post Type: post, page, product
     </div>
     </div>
 </section>
-	<?php include "inc/block_offers.php"; ?>
-<?php include "inc/block_instructors.php"; ?>
+	<?php include TEMPLATEPATH . "/inc/block_offers.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_instructors.php"; ?>
 <!-- Text -->
     <section class="texts" id="texts">
     <div class="container">
@@ -246,7 +246,7 @@ Template Post Type: post, page, product
         </div>
     </div>
 </section>
-<?php include "inc/block_places.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_places.php"; ?>
 <!--Ranks-->
     <section class="ranks" id="ranks">
     <div class="container">
@@ -262,7 +262,7 @@ Template Post Type: post, page, product
         </div>
     </div>
 </section>
-<?php include "inc/block_courses-down.php"; ?>
-<?php include "inc/block_faces-two.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_courses-down.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_faces-two.php"; ?>
 <!--Footer-->
 <?php get_template_part('template-parts/footer')?>
