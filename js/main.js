@@ -323,7 +323,7 @@ $(document).ready(function(){
 // Slidebars
 
 Array.prototype.slice.call(document.querySelectorAll('#sidebar-two-fixed,#sidebar-fixed')).forEach(function(a) {  // селекторы блоков, которые будут фиксироваться. Может быть как один блок, так два и более
-  var b = null, P = 0;
+  var b = null, P = 80;
   window.addEventListener('scroll', Ascroll, false);
   document.body.addEventListener('scroll', Ascroll, false);
   function Ascroll() {
