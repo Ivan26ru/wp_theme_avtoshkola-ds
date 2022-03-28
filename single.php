@@ -64,20 +64,7 @@ ob_start("fill_alt");
         </div>
         <?php get_template_part('map')?>
     </section>
-<!-- Up -->
-    <section class="up" id="up">
-        <div class="container">
-            <h1 class="title">
-                <?php
-                if (is_category()) {
-                    echo get_queried_object()->name;
-                }  else {
-                    the_title();
-                }
-                ?>
-            </h1>
-        </div>
-    </section>
+<?php include "inc/block_up.php"; ?>
 	<?php include "inc/block_blurbs-one.php"; ?>    <!-- About -->
 <?php include "inc/block_about.php"; ?>
 <?php include "inc/block_places.php"; ?>
