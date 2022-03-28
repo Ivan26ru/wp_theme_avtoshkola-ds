@@ -347,15 +347,7 @@ ob_start("fill_alt");
         </div>
     </div>
 </section>
-<!--Courses-->
-    <section class="courses" id="courses-down">
-    <div class="container">
-        <div class="cours">
-            <p class="cours__title">Пройти обучение онлайн</p>
-            <?php echo do_shortcode('[contact-form-7 id="1834" title="Выборка"]')?>
-        </div>
-    </div>
-</section>
+<?php include "inc/block_courses-down.php"; ?>
 <!-- Face -->
     <section class="faces faces-two" id="faces-two">
     <div class="container">
