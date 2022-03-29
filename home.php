@@ -53,17 +53,7 @@ Template Post Type: post, page, product
 	<div class="container">
 		<div class="video">
 			<p class="video__title title">Обучение и получение прав</p>
-			<div class="video__cont">
-				<?php the_field('video', 'option'); ?>
-				<div class="video__item">
-					<img src="<?php bloginfo('template_directory') ?>/img/video.png" alt=""/>
-					<p>Автомобильные права. Порядок получения. Стоимость.</p>
-				</div>
-				<div class="video__item">
-					<img src="<?php bloginfo('template_directory') ?>/img/video.png" alt=""/>
-					<p>Другие категории и порядок обучения.</p>
-				</div>
-			</div>
+			<?php echo do_shortcode("[theme_video_shablon metka=\"obuchenie_i_poluchenie_prav\"]"); ?>
 		</div>
 	</div>
 </section>
@@ -81,12 +71,12 @@ Template Post Type: post, page, product
 							<img src="<?php bloginfo('template_directory') ?>/img/one.png" alt=""/>
 						</div>
 					</div>
-					<?php the_field('price', 'option'); ?>
+					<?php echo do_shortcode(get_field('price', 'option')); ?>
 				</div>
 				<div class="pice__part">
 					<div class="pice__form">
 						<p class="pice__name">Узнать подробности</p>
-						<p class="pice__more">Вышлим подробный прайс</p>
+						<p class="pice__more">Вышлем подробный прайс</p>
 						<?php echo do_shortcode('[contact-form-7 id="2006" title="Узнать подробности"]') ?>
 					</div>
 				</div>
@@ -149,8 +139,7 @@ Template Post Type: post, page, product
 			</div>
 		</div>
 	</div>
-</section>
-<!-- Information -->
+</section><!-- Information -->
 <section class="information" id="informa tion">
 	<div class="container">
 		<div class="info">
