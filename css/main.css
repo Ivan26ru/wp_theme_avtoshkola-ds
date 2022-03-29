@@ -1578,6 +1578,8 @@ br {
     margin-bottom: 20px;
 }
 
+.block_text_content p,
+.p_text_content,
 .contant p {
     margin-bottom: 10px;
     color: #ffffffad;

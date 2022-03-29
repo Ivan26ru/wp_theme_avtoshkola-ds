@@ -125,8 +125,8 @@ Template Post Type: post, page, product
 		<div class="review">
 			<p class="review__title title"><?php the_field('info-1', 'option'); ?></p>
 			<div class="review__cont">
-				<div class="review__part">
-					<p class="review__text">
+				<div class="review__part block_text_content">
+					<p class="review__text ">
 						<?php the_field('info_text', 'option'); ?>
 					</p>
 				</div>
@@ -147,9 +147,9 @@ Template Post Type: post, page, product
 				<?php the_field('info-2', 'option'); ?>
 			</p>
 			<div class="info__cont">
-				<div class="info__part">
-					<p><?php the_field('info', 'option'); ?></div>
-				</p>
+				<div class="info__part block_text_content">
+					<?php the_field('info', 'option'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -160,10 +160,8 @@ Template Post Type: post, page, product
 <!-- Text -->
 <section class="texts" id="texts">
 	<div class="container">
-		<div class="text">
-			<p>
+		<div class="text block_text_content">
 				<?php the_field('text'); ?>
-			</p>
 		</div>
 	</div>
 </section>
@@ -177,7 +175,7 @@ Template Post Type: post, page, product
 				<div class="rank__part">
 					<img src="<?php the_field('rank_img', 'option'); ?>" alt=""/>
 				</div>
-				<div class="rank__part">
+				<div class="rank__part block_text_content">
 					<?php the_field('rank_text', 'option'); ?>
 				</div>
 			</div>
