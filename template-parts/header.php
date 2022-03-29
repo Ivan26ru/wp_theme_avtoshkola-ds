@@ -80,7 +80,7 @@
 				<div class="hc_line1">
 					<a href="#">
 						<div class="hc_line1_wrap_img">
-							<img src="http://children-circles.loc/wp-content/themes/children-circles/assets/img/lic.png" alt="">
+							<img src="<?php bloginfo('template_directory') ?>/img/lisens-2.png" alt="">
 						</div>
 						Лицензия 77Л01 №0010539</a>
 				</div>
