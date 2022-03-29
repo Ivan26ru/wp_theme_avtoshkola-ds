@@ -15,30 +15,8 @@ Template Post Type: post, page, product
 </section>
 
 <?php include TEMPLATEPATH . "/inc/block_ranges.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_blurbs-one.php"; ?>
 
-<!--Blurbs-->
-<section class="blurbs" id="blurbs">
-	<div class="container">
-		<div class="blurb">
-			<p class="blurb__title title">Бесплатная теория в Автошколе</p>
-			<div class="blurb__up">
-				<div class="blurb__info">
-					<?php the_field('blurb_text', 'option'); ?>
-				</div>
-				<div class="blurb__form">
-					<p>Текущая акция</p>
-					<?php echo do_shortcode('[contact-form-7 id="2062" title="Текущая акция"]') ?>
-				</div>
-			</div>
-			<div class="blurb__baner">
-				<img src="<?php the_field('blurb_baner', 'option'); ?>" alt=""/>
-			</div>
-			<div class="blurb__text">
-				<?php the_field('blurb_post', 'option'); ?>
-			</div>
-		</div>
-	</div>
-</section>
 
 <!--More-information-->
 <section class="more-information" id="more-information">

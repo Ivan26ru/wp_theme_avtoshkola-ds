@@ -4,8 +4,8 @@
 		<div class="blurb">
 			<div class="blurb__up">
 				<div class="blurb__info">
-					<span>Акция действует до 03.02.22</span>
-					<span>Времени осталось:  2 дн. 16 час. 34 мин. 20 сек.</span>
+					<span>Акция действует до <?php echo date("d.m.Y", strtotime("+1 month")); ?></span>
+<!--					<span>Времени осталось:  2 дн. 16 час. 34 мин. 20 сек.</span>-->
 					<div class="blurb__item">
 						<div>
 							<p class="name">ТЕОРИЯ</p>
