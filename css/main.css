@@ -240,16 +240,27 @@ tbody tr:hover {
     display: block;
 }
 
-.menu__list li:first-child:before {
+.hc_line1 a {
     font-size: 10px;
-    position: absolute;
-    top: -25px;
     display: block;
     content: 'Лицензия 77Л01 №0010539';
 }
 
 .menu__list li:first-child:hover:before {
     color: #fff;
+}
+
+.hc_line1_wrap_img {
+    width: 20px;
+    height: 14px;
+    display: inline-block;
+}
+
+.hc_line1_wrap_img img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+object-position: center;
 }
 
 
@@ -489,10 +500,15 @@ br {
     display: flex
 }
 
+.header_wrap_menu {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .menu__list {
     align-items: flex-end;
-    padding-bottom: 5px;
-    flex-grow: 2;
 }
 
 .menu__logo div {
@@ -1249,7 +1265,7 @@ br {
     height: 18px;
 }
 
-.down__list li{
+.down__list li {
     margin-bottom: 10px;
 }
 
@@ -2631,7 +2647,7 @@ br {
         font-size: 12px;
     }
 
-    .down__list li{
+    .down__list li {
         font-size: 10px;
     }
 
