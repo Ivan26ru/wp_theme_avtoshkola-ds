@@ -68,7 +68,7 @@
 				<span></span>
 				<span></span>
 			</div>
-			<a href="https://avtoshkola-ds.ru/" class="menu__logo">
+			<a href="/" class="menu__logo">
 				<img src="<?php bloginfo('template_directory') ?>/img/logo-3.png" alt="Логотип в шапке"/>
 				<div>
 					<span>Дядя Степа</span>
