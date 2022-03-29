@@ -203,14 +203,14 @@ if (function_exists('acf_add_options_page')) {
     acf_add_options_page('Blurbs');
 }
 
-function root_acf_format_value( $value, $post_id, $field ) {
+//function root_acf_format_value( $value, $post_id, $field ) {
+//
+//    $value = do_shortcode($value);
+//
+//    return $value;
+//}
 
-    $value = do_shortcode($value);
-
-    return $value;
-}
-
-add_filter('acf/format_value', 'root_acf_format_value', 10, 3);
+//add_filter('acf/format_value', 'root_acf_format_value', 10, 3);
 
  // API Карт Google  
 
