@@ -1,64 +1,116 @@
-.alignnone {
-    margin: 5px 20px 20px 0;
-}
+/*.alignnone {*/
+/*    margin: 5px 20px 20px 0;*/
+/*}*/
+
+.alignnone, div.alignnone,
 .aligncenter, div.aligncenter {
     margin: auto;
 }
+
 .alignright {
-    float:right;
+    float: right;
     margin: 5px 0 20px 20px;
 }
+
 .alignleft {
-    float:left;
+    float: left;
     margin: 5px 20px 20px 0;
 }
+
+.alignnone,
 .aligncenter {
     display: block;
     margin: 5px auto 5px auto;
 }
+
 a img.alignright {
-    float:right;
+    float: right;
     margin: 5px 0 20px 20px;
 }
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
+
+/*a img.alignnone {*/
+/*    margin: 5px 20px 20px 0;*/
+/*}*/
+
 a img.alignleft {
-    float:left;
+    float: left;
     margin: 5px 20px 20px 0;
 }
+
+a img.alignnone,
 a img.aligncenter {
     display: block;
+    margin-right: auto;
     margin-left: auto;
-    margin-right: auto
 }
+
 .wp-caption {
-  /*  background: #fff;
-    border: 1px solid #f0f0f0;*/
+    /*background: #fff;*/
+    /*border: 1px solid #f0f0f0;*/
     max-width: 96%; /* Image does not overflow the content area */
     padding: 5px 3px 10px;
     text-align: center;
 }
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
+
+/*.wp-caption.alignnone {*/
+/*    margin: 5px 20px 20px 0;*/
+/*}*/
+
 .wp-caption.alignleft {
     margin: 5px 20px 20px 0;
 }
+
 .wp-caption.alignright {
     margin: 5px 0 20px 20px;
 }
+
 .wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin:0;
-    max-width: 98.5%;
-    padding:0;
     width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
 }
+
 .wp-caption p.wp-caption-text {
-    font-size:11px;
-    line-height:17px;
-    margin:0;
-    padding:0 4px 5px;
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.wp-caption {
+    /*outline:1px solid red;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.wp-caption:hover .wp-caption-text {
+    display: block;
+}
+
+body .su-custom-gallery-slide span,
+.wp-caption-text {
+    font-family: Gilroy, sans-serif;
+    position: absolute;
+
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    background: rgba(227, 98, 75, 0.5);
+}
+
+.wp-caption-text {
+    display: none;
+    bottom: 10px;
+    left: 4px;
+    width: calc(100% - 7px);
+}
+
+body .su-custom-gallery-slide span {
+
+    bottom: 0px;
+    left: 0px;
+    width: calc(100%);
 }
