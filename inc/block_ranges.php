@@ -31,7 +31,7 @@
 								<p class="range__place"><?php the_field('category'); ?></p>
 								<p class="range__metro"><?php the_field('auto_metro'); ?></p>
 								<div class="range__down">
-									<a href="<?php the_permalink() ?>" class="range__link">
+									<a href="<?php the_permalink() ?>" class="range__link popmake-186">
 										Подробнее
 									</a>
 								</div>
