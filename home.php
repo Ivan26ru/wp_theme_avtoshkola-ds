@@ -28,7 +28,7 @@ Template Post Type: post, page, product
 				$link = get_sub_field('more_linlk');
 				$img = get_sub_field('more_img');
 				?>
-				<div class="more-info__cont">
+				<div class="more-info__cont popmake-186">
 					<p class="more-info__title"><?php echo $title; ?></p>
 					<div class="more-info__item">
 						<div class="more-info__up">

@@ -82,7 +82,7 @@
 						<div class="hc_line1_wrap_img">
 							<img src="<?php bloginfo('template_directory') ?>/img/lisens-2.png" alt="">
 						</div>
-						Лицензия 77Л01 №0010539</a>
+						Пишем Лицензия № 036152</a>
 				</div>
 				<div class="hc_line2">
 					<?php wp_nav_menu([

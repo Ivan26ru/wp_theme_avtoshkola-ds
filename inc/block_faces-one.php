@@ -3,12 +3,8 @@
 	<div class="container">
 		<div class="face">
 			<div class="face__item">
-				<p class="face__title">
-					Автошкола для обучения
-				</p>
-				<p class="face__text">
-					Автошкола (Северо-восточный округ) ул. Нестерова, 15
-				</p>
+				<p class="face__title">Поиск автошколы</p>
+				<p class="face__text">Навигация по автошколам Москвы</p>
 				<div class="face__cont">
 					<?php echo do_shortcode('[contact-form-7 id="32" title="Главная форма"]')?>
 				</div>
