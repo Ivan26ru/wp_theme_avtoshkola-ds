@@ -50,7 +50,13 @@ if ( ! function_exists( 'right_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'right' ),
+				'menu-1' => 'Главное (верхнее)',
+				'left-sidebar-1' => 'Левый сайтбар 1',
+				'left-sidebar-2' => 'Левый сайтбар 2',
+				'left-sidebar-3' => 'Левый сайтбар 3',
+				'footer-1'       => 'Подвал 1',
+				'footer-2'       => 'Подвал 2',
+				'footer-3'       => 'Подвал 3',
 			)
 		);
 

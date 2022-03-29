@@ -1,47 +1,34 @@
 <div class="sidebar">
 	<div class="sidebar__fixed" id="sidebar-fixed">
-		<ul class="sidebar__list">
-			<?php if( have_rows('menu', 'option') ): ?>
-				<?php while( have_rows('menu', 'option') ): the_row();
-					$text = get_sub_field('menu_text', 'option');
-					$link = get_sub_field('menu_link', 'option');
-					?>
-					<li>
-						<a href="<?php echo $link; ?>">
-							<p><?php echo $text; ?></p>
-						</a>
-					</li>
-				<?php endwhile; ?>
-			<?php endif; ?>
-		</ul>
-		<ul class="sidebar__list">
-			<?php if( have_rows('menu-two', 'option') ): ?>
-				<?php while( have_rows('menu-two', 'option') ): the_row();
-					$text = get_sub_field('menu_text-two', 'option');
-					$link = get_sub_field('menu_link-two', 'option');
-					?>
-					<li>
-						<a href="<?php echo $link; ?>">
-							<p><?php echo $text; ?></p>
-						</a>
-					</li>
-				<?php endwhile; ?>
-			<?php endif; ?>
-		</ul>
-		<ul class="sidebar__list sidebar__list-materialy">
-			<?php if( have_rows('menu-three', 'option') ): ?>
-				<?php while( have_rows('menu-three', 'option') ): the_row();
-					$text = get_sub_field('menu_text-three', 'option');
-					$link = get_sub_field('menu_link-three', 'option');
-					?>
-					<li>
-						<a href="<?php echo $link; ?>">
-							<p><?php echo $text; ?></p>
-						</a>
-					</li>
-				<?php endwhile; ?>
-			<?php endif; ?>
-		</ul>
+		<div class="sidebar__one">
+			<p class="sidebar__title">Категории</p>
+			<?php wp_nav_menu([
+					'theme_location' => 'left-sidebar-1',
+					'depth'          => 2, // количество уровней вложенности
+					'items_wrap'     => '<ul class="sidebar__list">%3$s</ul>'
+			]);
+			?>
+		</div>
+
+		<div class="sidebar__two">
+			<p class="sidebar__title">Права</p>
+			<?php wp_nav_menu([
+					'theme_location' => 'left-sidebar-2',
+					'depth'          => 2, // количество уровней вложенности
+					'items_wrap'     => '<ul class="sidebar__list">%3$s</ul>'
+			]);
+			?>
+		</div>
+		<div class="sidebar__two sidebar__list-materialy">
+			<p class="sidebar__title">Материалы</p>
+			<?php wp_nav_menu([
+					'theme_location' => 'left-sidebar-3',
+					'depth'          => 2, // количество уровней вложенности
+					'items_wrap'     => '<ul class="sidebar__list">%3$s</ul>'
+			]);
+			?>
+		</div>
+
 		<div class="sidebar__contact">
 			<img src="<?php bloginfo('template_directory')?>/img/map-littel.png" alt="" class="sidebar__map"/>
 			<p class="sidebar__place">Центральный офис: Москва, ул. Степана Супруна дом 4</p>

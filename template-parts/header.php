@@ -29,7 +29,7 @@
     <!-- WP-style -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style_wp.css">
 	<!-- Style css -->
-	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/main.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/main.css?<?php echo date('U');?>">
 	<?php wp_head(); ?>
 	<!-- Yandex.Metrika counter -->
 <script type="text/javascript" >

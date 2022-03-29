@@ -1248,7 +1248,7 @@ br {
     height: 18px;
 }
 
-.down__item {
+.down__list li{
     margin-bottom: 10px;
 }
 
@@ -1310,45 +1310,38 @@ br {
 .sidebar__list li {
     box-sizing: border-box;
     width: 100%;
-    padding: 5px 10px;
-    border-radius: 54px;
+    margin-top: 3px;
+
 }
 
-.sidebar__list li:first-child {
-    font-size: 20px;
-    text-transform: uppercase
-}
-
-.sidebar__list li:not(:first-child) {
-    display: flex;
+.sidebar__list li {
+    display: block;
     align-items: center;
 }
 
-.sidebar__list li:not(:first-child):before {
+.sidebar__list li a:before {
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 10px;
     display: block;
     width: 4px;
     height: 4px;
-    margin-right: 8px;
     content: '';
     border-radius: 50px;
     background: #C4C4C4;
 }
 
-.sidebar__list li:first-child:after {
-    display: block;
-    width: 100%;
-    height: 1px;
-    content: '';
-    background-color: #fff;
-}
-
-.sidebar__list li:hover {
+.sidebar__list li a:hover {
     background-color: rgba(255, 255, 255, 0.19);
 }
 
 .sidebar__list a {
-    display: flex;
+    position: relative;
+    display: block;
     align-items: center;
+    padding: 5px 10px;
+    padding-left: 20px;
+    border-radius: 54px;
 }
 
 .sidebar__list {
@@ -2637,7 +2630,7 @@ br {
         font-size: 12px;
     }
 
-    .down__item {
+    .down__list li{
         font-size: 10px;
     }
 
@@ -2760,6 +2753,13 @@ br {
 
 
 .sidebar__fixed .sticky .sidebar__list-materialy,
-.sidebar__fixed .stop .sidebar__list-materialy{
+.sidebar__fixed .stop .sidebar__list-materialy {
     display: none;
+}
+
+.sidebar__title {
+    font-size: 20px;
+    /*line-height: 16px;*/
+    text-decoration: underline;
+    text-transform: uppercase;
 }
