@@ -13,26 +13,23 @@
 		$yandexMapInit = "init" . $yandexMapAttrId;
 		?>
 
-
 		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 100%"></div>
 		<script>
 			function <?php echo $yandexMapInit ?>() {
 				var myMap = new ymaps.Map(<?php echo $yandexMapAttrId ?>, {
-					center: [55.76, 37.64],
+					center: [55.76, 37.40],
 					zoom: 10
 				}, {
 					searchControlProvider: 'yandex#search'
 				});
 
 				// Создаем геообъект с типом геометрии "Точка".
-
 				myMap.geoObjects
 
 				<?php $args = array(
 						'post_type' => 'avtoshkola',
 				);
 				$query = new WP_Query($args);
-
 
 				// Цикл
 				if ($query->have_posts()) {
@@ -47,14 +44,12 @@
 						}))
 
 				<?php }
-				} else {
-					// Постов не найдено
-				}
+				} // Постов не найдено
+
 				// Возвращаем оригинальные данные поста. Сбрасываем $post.
 				wp_reset_postdata();
 				?>
-				;
-			}
+			}// .function init
 
 			ymaps.ready(<?php echo $yandexMapInit ?>);
 		</script>
