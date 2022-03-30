@@ -11,10 +11,14 @@
 					'post_type' => 'avtoshkola',
 				) );?>
 				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-					<div class="range__cont">
+					<div class="range__cont postid-<?php echo $post->ID;?>">
 						<div class="range__item">
 							<div class="range__part">
-								<img src="<?php the_field('auto_img'); ?>" class="range__photo"/>
+								<img src="<?php if (get_field('auto_img')) {
+									echo get_field('auto_img');
+								} else{
+									echo bloginfo('template_directory') . '/img/new.png';
+								} ?>" class="range__photo"/>
 								<div class="range__reting">
 									<?php if( have_rows('auto_reting') ): ?>
 										<?php while( have_rows('auto_reting') ): the_row();
@@ -27,7 +31,11 @@
 								</div>
 							</div>
 							<div class="range__contant">
-								<p class="range__place"><?php the_field('auto_name'); ?></p>
+								<p class="range__place"><?php if (get_field('auto_name')) {
+										echo get_field('auto_name');
+									} else{
+										the_title();
+									} ?></p>
 								<p class="range__place"><?php the_field('category'); ?></p>
 								<p class="range__metro"><?php the_field('auto_metro'); ?></p>
 								<div class="range__down">
