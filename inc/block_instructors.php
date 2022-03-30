@@ -13,7 +13,7 @@
 						$text = get_sub_field('instruc_text', 'option');
 						?>
 						<div class="instru__item">
-							<img src="<?php echo $icon; ?>" alt="" class="instru__img"/>
+							<img src="<?php echo $icon; ?>" title="<?php echo $name ?>" alt="<?php echo $name ?>" class="instru__img"/>
 							<p class="instru__name">
 								<?php echo $name; ?>
 							</p>

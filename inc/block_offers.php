@@ -14,7 +14,7 @@
 						$img = get_sub_field('offer_img', 'option');
 						?>
 						<a href="<?php echo $link; ?>" class="offer__item">
-							<img src="<?php echo $img; ?>" alt="" class="offer__photo"/>
+							<img src="<?php echo $img; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="offer__photo"/>
 							<p class="offer__name">
 								<?php echo $name; ?>
 							</p>

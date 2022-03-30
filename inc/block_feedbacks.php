@@ -11,7 +11,7 @@
 						$img = get_sub_field('feedback_img', 'option');
 						?>
 						<div><div class="feedback__item">
-								<img class="feedback__photo" src="<?php echo $img; ?>" alt=""/>
+								<img class="feedback__photo" src="<?php echo $img; ?>" alt="<?php echo $name; ?>"/>
 								<div class="feedback__info">
 									<p class="feedback__name"><?php echo $name; ?></p>
 									<p class="feedback__text"><?php echo $text; ?></p>
@@ -20,7 +20,7 @@
 											<?php while( have_rows('feedback_z', 'option') ): the_row();
 												$icon = get_sub_field('feedback_img', 'option');
 												?>
-												<img src="<?php echo $icon; ?>" alt=""/>
+												<img src="<?php echo $icon; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>"/>
 											<?php endwhile; ?>
 										<?php endif; ?>
 									</div>

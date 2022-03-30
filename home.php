@@ -33,7 +33,7 @@ Template Post Type: post, page, product
 					<p class="more-info__title"><?php echo $title; ?></p>
 					<div class="more-info__item">
 						<div class="more-info__up">
-							<img src="<?php echo $img; ?>" alt=""/>
+							<img src="<?php echo $img; ?>" title="<?php echo $title; ?>" alt="<?php echo $title; ?>"/>
 							<p><?php echo $name; ?></p>
 						</div>
 						<?php if (have_rows('more_item')): ?><?php while (have_rows('more_item')): the_row();
@@ -69,7 +69,7 @@ Template Post Type: post, page, product
 						<p class="pice__title">Цены</p>
 						<div class="pice__icon">
 							<p>Лучшее предложение<span>в Москве</span></p>
-							<img src="<?php bloginfo('template_directory') ?>/img/one.png" alt=""/>
+							<img src="<?php bloginfo('template_directory') ?>/img/one.png" title="Лучшее предложение в Москве" alt="Лучшее предложение в Москве"/>
 						</div>
 					</div>
 					<?php echo do_shortcode(get_field('price', 'option')); ?>
@@ -92,14 +92,14 @@ Template Post Type: post, page, product
 		<div class="serv">
 			<div class="serv__up">
 				<div class="serv__info">
-					<img src="<?php bloginfo('template_directory') ?>/img/lisens-2.png" alt=""/>
+					<img src="<?php bloginfo('template_directory') ?>/img/lisens-2.png" title="Лицензия" alt="Лицензия"/>
 					<p>Официальное получение документов<span>Лицензия 77Л01 №0010539</span></p>
 				</div>
 				<p class="serv__title title">
 					Мы обучаем </p>
 				<div class="serv__info">
 					<p>Работа с гос. компаниями<span>Наличие ЭЦП</span></p>
-					<img src="<?php bloginfo('template_directory') ?>/img/work-2.png" alt=""/>
+					<img src="<?php bloginfo('template_directory') ?>/img/work-2.png" title="Работа с гос. компаниями" alt="Работа с гос. компаниями"/>
 				</div>
 			</div>
 			<div class="serv__cont">
@@ -109,9 +109,7 @@ Template Post Type: post, page, product
 					$class = get_sub_field('serv_class', 'option');
 					?>
 					<a href="<?php echo $link; ?>" class="serv__item serv__item_<?php echo $class; ?>">
-						<p>
-							<?php echo $text; ?>
-						</p>
+						<p><?php echo $text; ?></p>
 					</a>
 				<?php endwhile; ?><?php endif; ?>
 			</div>
@@ -174,7 +172,7 @@ Template Post Type: post, page, product
 			<p class="rank__title">Категории транспортных средств</p>
 			<div class="rank__cont">
 				<div class="rank__part">
-					<img src="<?php the_field('rank_img', 'option'); ?>" alt=""/>
+					<img src="<?php the_field('rank_img', 'option'); ?>" title="Категории транспортных средств" alt="Категории транспортных средств"/>
 				</div>
 				<div class="rank__part block_text_content">
 					<?php the_field('rank_text', 'option'); ?>

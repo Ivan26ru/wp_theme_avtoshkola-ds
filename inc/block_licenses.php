@@ -11,7 +11,7 @@
 						$icon = get_sub_field('license_photo', 'option');
 						?>
 						<div class="license__item">
-							<img src="<?php echo $icon; ?>" alt=""/>
+							<img src="<?php echo $icon; ?>" title="Лицензии" alt="Лицензии"/>
 						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>

@@ -30,14 +30,14 @@
 		</div>
 
 		<div class="sidebar__contact">
-			<img src="<?php bloginfo('template_directory')?>/img/map-littel.png" alt="" class="sidebar__map"/>
+			<img src="<?php bloginfo('template_directory')?>/img/map-littel.png" title="Карта" alt="Карта" class="sidebar__map"/>
 			<p class="sidebar__place">Центральный офис: Москва, ул. Степана Супруна дом 4</p>
 			<a href="tel:89995991615" class="sidebar__phone">
 				<p>8-999-599-1615</p>
 			</a>
 			<p class="sidebar__time">
-				<a href="tel:88007587702" ><img src="<?php bloginfo('template_directory')?>/img/telegram.svg" alt="Телефон в шапке"/></a>
-				<a href="tel:88007587702" ><img src="<?php bloginfo('template_directory')?>/img/whatsap.svg" alt="Телефон в шапке"/></a>
+				<a href="tel:88007587702" ><img src="<?php bloginfo('template_directory')?>/img/telegram.svg" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+				<a href="tel:88007587702" ><img src="<?php bloginfo('template_directory')?>/img/whatsap.svg" title="Телефон в шапке" alt="Телефон в шапке"/></a>
 				c 8:00 до 20:00
 			</p>
 			<a href="mailto:info@985.su" class="sidebar__email">

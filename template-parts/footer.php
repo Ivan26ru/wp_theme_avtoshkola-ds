@@ -28,7 +28,7 @@
 				]);
 				?>
 				<div class="down__best">
-					<img src="<?php bloginfo('template_directory') ?>/img/one.png" alt=""/>
+					<img src="<?php bloginfo('template_directory') ?>/img/one.png" title="Коротко об автошколе" alt="Коротко об автошколе"/>
 					<p>Лучшее предложение <span>в Москве</span></p>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 			</div>
 			<div class="down__info">
 				<a href="https://avtoshkola-ds.ru/" class="down__logo">
-					<img src="<?php bloginfo('template_directory') ?>/img/logo-3.png" alt="Логотип в шапке"/>
+					<img src="<?php bloginfo('template_directory') ?>/img/logo-3.png" title="Логотип в шапке" alt="Логотип в шапке"/>
 					<div>
 						<span>Дядя Степа</span>
 						<p>Сеть Автошкол в Москве</p>
@@ -68,8 +68,8 @@
 				</a>
 				<p class="down__place">Москва, ул. Степана Супруна дом 4</p>
 				<a href="tel:89995991615" class="down__phone">
-					<img src="<?php bloginfo('template_directory') ?>/img/telegram.svg" alt="Телефон в футере"/>
-					<img src="<?php bloginfo('template_directory') ?>/img/whatsap.svg" alt="Телефон в футере"/>
+					<img src="<?php bloginfo('template_directory') ?>/img/telegram.svg" title="Телефон в футере" alt="Телефон в футере"/>
+					<img src="<?php bloginfo('template_directory') ?>/img/whatsap.svg" title="Телефон в футере" alt="Телефон в футере"/>
 					<p>8-999-599-1615</p>
 				</a>
 				<p class="down__time"> с 8:00 до 22:00</p>

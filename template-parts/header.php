@@ -17,12 +17,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!--Favicon-->
-	<link rel="shortcut icon" alt="фавикон" href="/favicon.ico"/>
-	<link type="image/x-icon" alt="фавикон" rel="shortcut icon" href="/favicon.ico"/>
-	<link type="image/x-icon" alt="фавикон" sizes="16x16" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
-	<link type="image/x-icon" alt="фавикон" sizes="32x32" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
-	<link type="image/x-icon" alt="фавикон" sizes="96x96" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
-	<link type="image/x-icon" alt="фавикон" sizes="120x120" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
+	<link rel="shortcut icon" title="фавикон" alt="фавикон" href="/favicon.ico"/>
+	<link type="image/x-icon" title="фавикон" alt="фавикон" rel="shortcut icon" href="/favicon.ico"/>
+	<link type="image/x-icon" title="фавикон" alt="фавикон" sizes="16x16" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
+	<link type="image/x-icon" title="фавикон" alt="фавикон" sizes="32x32" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
+	<link type="image/x-icon" title="фавикон" alt="фавикон" sizes="96x96" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
+	<link type="image/x-icon" title="фавикон" alt="фавикон" sizes="120x120" rel="icon" href="<?php bloginfo('template_directory') ?>/img/logo-3.png"/>
 	<!-- Slider css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/slick.css"/>
@@ -50,7 +50,7 @@
 		});
 	</script>
 	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/86930517" style="position:absolute; left:-9999px;" alt=""/></div>
+		<div><img src="https://mc.yandex.ru/watch/86930517" style="position:absolute; left:-9999px;" title="alt="Яндекс метрика"" alt="Яндекс метрика"/></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
 	<meta name="yandex-verification" content="949336b0486bc093"/>
@@ -69,7 +69,7 @@
 				<span></span>
 			</div>
 			<a href="/" class="menu__logo">
-				<img src="<?php bloginfo('template_directory') ?>/img/logo-3.png" alt="Логотип в шапке"/>
+				<img src="<?php bloginfo('template_directory') ?>/img/logo-3.png" title="Логотип в шапке" alt="Логотип в шапке"/>
 				<div>
 					<span>Дядя Степа</span>
 					<p>Сеть Автошкол в Москве</p>
@@ -80,7 +80,7 @@
 				<div class="hc_line1">
 					<a href="#">
 						<div class="hc_line1_wrap_img">
-							<img src="<?php bloginfo('template_directory') ?>/img/lisens-2.png" alt="">
+							<img src="<?php bloginfo('template_directory') ?>/img/lisens-2.png" title="Лицензия" alt="Лицензия">
 						</div>
 						Пишем Лицензия № 036152</a>
 				</div>
@@ -95,8 +95,8 @@
 
 			<div class="menu__info">
 				<div class="menu__up">
-					<a href="tel:89995991615"><img src="<?php bloginfo('template_directory') ?>/img/telegram.svg" alt="Телефон в шапке"/></a>
-					<a href="tel:89995991615"><img src="<?php bloginfo('template_directory') ?>/img/whatsap.svg" alt="Телефон в шапке"/></a>
+					<a href="tel:89995991615"><img src="<?php bloginfo('template_directory') ?>/img/telegram.svg" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+					<a href="tel:89995991615"><img src="<?php bloginfo('template_directory') ?>/img/whatsap.svg" title="Телефон в шапке" alt="Телефон в шапке"/></a>
 					<a href="tel:89995991615" class="menu__tel">8-999-599-1615</a>
 				</div>
 				<p><span>с 8:00 до 20:00</span></p>
