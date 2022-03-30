@@ -16,7 +16,8 @@ body {
     background: radial-gradient(123.99% 123.99% at 14.53% 104.1%, #606060 4.57%, #004150 20.16%, #04162C 61.46%, #000000 100%);
 }
 
-.container {
+.container,
+.wrap {
     width: 1142px;
     margin: 0 auto
 }
@@ -430,7 +431,8 @@ br {
     padding: 20px 0
 }
 
-.up .container {
+.up .container,
+.wrap {
     text-align: center
 }
 
@@ -592,25 +594,51 @@ br {
 }
 
 /*-----------------------------------------Face--------------------------*/
+/*----------------------------------------block_map------------------------------*/
+.block_map {
+    position: relative;
+    height: 600px;
+}
+
+.bm_wrap_map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.block_map .wrap {
+    position: relative;
+    height: 100%;
+    pointer-events: none;
+}
+
+.form_map {
+    position: absolute;
+    top: 68px;
+    width: 394px;
+    pointer-events: auto;
+}
+
 
 .faces {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
 .face {
-    position: absolute;
     z-index: 2;
     margin-top: 70px
 }
 
-.faces-one {
+.block_map {
     margin-top: 70px
 }
 
 .face__item {
     position: relative;
-    width: 394px;
     padding: 12px 30px 27px;
+    text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.6);
@@ -1205,10 +1233,6 @@ br {
     background: url("../img/map-fon-2.png") top center / cover;
 }
 
-.faces-two {
-    filter: none;
-}
-
 
 /*-------------------------------------Texts---------------------------------*/
 
@@ -1646,7 +1670,9 @@ br {
     margin-top: 20px;
 }
 
+
 /*----------------------------------------Slider------------------------------*/
+
 
 .slick-prev:before,
 .slick-next:before {
@@ -2167,7 +2193,8 @@ br {
 
 
 @media (max-width: 1200px) {
-    .container {
+    .container,
+    .wrap {
         width: 960px;
     }
 
@@ -2282,7 +2309,8 @@ br {
 }
 
 @media (max-width: 992px) {
-    .container {
+    .container,
+    .wrap {
         width: 730px;
     }
 
@@ -2443,7 +2471,8 @@ br {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container,
+    .wrap {
         width: 540px;
     }
 
@@ -2623,7 +2652,8 @@ br {
 }
 
 @media (max-width: 576px) {
-    .container {
+    .container,
+    .wrap {
         width: 90%;
     }
 
@@ -2734,7 +2764,7 @@ br {
         left: 7%;
     }
 
-    .faces-one {
+    .block_map {
         margin-top: 90px;
     }
 

@@ -3,7 +3,8 @@ Template Post Type: post, page, product
  -->
 <?php include TEMPLATEPATH . "/inc/func_fill_alt.php"; ?>
 <?php get_template_part('template-parts/header') ?>
-<?php include TEMPLATEPATH . "/inc/block_faces-one.php"; ?>
+<?php //include TEMPLATEPATH . "/inc/block_map.php"; ?>
+<?php include TEMPLATEPATH . "/inc/block_map.php"; ?>
 
 <!--Courses-->
 <section class="courses" id="courses">
@@ -140,7 +141,7 @@ Template Post Type: post, page, product
 		</div>
 	</div>
 </section><!-- Information -->
-<section class="information" id="informa tion">
+<section class="information" id="information">
 	<div class="container">
 		<div class="info">
 			<p class="info__title title">
@@ -161,7 +162,7 @@ Template Post Type: post, page, product
 <section class="texts" id="texts">
 	<div class="container">
 		<div class="text block_text_content">
-				<?php the_field('text'); ?>
+			<?php the_field('text'); ?>
 		</div>
 	</div>
 </section>
@@ -182,6 +183,5 @@ Template Post Type: post, page, product
 		</div>
 </section>
 <?php include TEMPLATEPATH . "/inc/block_courses-down.php"; ?>
-<?php include TEMPLATEPATH . "/inc/block_faces-two.php"; ?>
-<!--Footer-->
+<?php include TEMPLATEPATH . "/inc/block_map.php"; ?>
 <?php get_template_part('template-parts/footer') ?>
