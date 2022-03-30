@@ -2476,6 +2476,10 @@ br {
         width: 540px;
     }
 
+    .form_map{
+        width: auto;
+    }
+
     .new {
         flex-wrap: wrap;
     }
