@@ -11,7 +11,7 @@
 				<?php while ($the_query->have_posts()) : $the_query->the_post(); ?><?php
 					$title = (get_field('auto_name')) ? get_field('auto_name') : get_the_title();
 					//Проверка существования миниатюры и вставка либо ее, либо заглушки
-					$img = (has_post_thumbnail()) ? get_the_post_thumbnail($post->ID, 'thumb-94', array("class" => "range__photo")) : '<img src="' . get_bloginfo('template_directory') . '/img/new.png' . '" class="range__photo"/>';
+					$img = (has_post_thumbnail()) ? get_the_post_thumbnail($post->ID, 'thumb-94', array("class" => "range__photo")) : '<img src="' . get_bloginfo('template_directory') . '/img/img_range.jpg' . '" class="range__photo"/>';
 					?>
 					<div class="range__cont postid-<?php echo $post->ID; ?>">
 						<div class="range__item">
