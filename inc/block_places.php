@@ -7,7 +7,7 @@
 				<?php if (have_rows('place', 'option')): ?><?php while (have_rows('place', 'option')): the_row();
 					$name = get_sub_field('place_title', 'option');
 					$link = get_sub_field('place_link', 'option');
-					$img = wp_get_attachment_image_url(get_sub_field('place_img', 'option'), 'lic-207x285');
+					$img = get_url_img_is_sub_field('place_img', 'lic-207x285');
 					?>
 					<a href="<?php echo $link; ?>" class="place__item">
 						<div class="place__item_wrap_img">

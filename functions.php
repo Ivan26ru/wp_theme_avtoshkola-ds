@@ -200,7 +200,7 @@ if (function_exists('acf_add_options_page')) {
 
 //add_filter('acf/format_value', 'root_acf_format_value', 10, 3);
 
- // API Карт Google  
+ // API Карт Google
 
 function my_acf_google_map_api( $api ){
   $api['key'] = 'AIzaSyCnsm0lKdy5xDCUBrxDzkg2GEIf83hXbAg';
@@ -461,4 +461,9 @@ function true_new_image_sizes( $sizes ) {
 		'content' => 'На всю ширину'
 	);
 	return array_merge( $sizes, $addsizes );
+}
+
+function get_url_img_is_sub_field($name_field_image_id, $img_size = 'full'){
+	$resoult = wp_get_attachment_image_url(get_sub_field($name_field_image_id), $img_size);
+	return $resoult;
 }
