@@ -111,18 +111,6 @@ endif;
 add_action( 'after_setup_theme', 'right_setup' );
 
 /**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-function right_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'right_content_width', 640 );
-}
-add_action( 'after_setup_theme', 'right_content_width', 0 );
-
-/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
@@ -193,9 +181,9 @@ if (function_exists('acf_add_options_page')) {
     acf_add_options_page('Offer');
     acf_add_options_page('License');
     acf_add_options_page('Instructor');
-    acf_add_options_page('Footer');
+//    acf_add_options_page('Footer');
     acf_add_options_page('Price');
-    acf_add_options_page('Menu');
+//    acf_add_options_page('Menu');
     acf_add_options_page('Rank');
     acf_add_options_page('Place');
     acf_add_options_page('Feedback');
@@ -447,8 +435,6 @@ function dimox_breadcrumbs() {
 	}
 }
 
-
-
 //добавление alt и title для миниатюр записей start
 function wph_alt_title_for_thumbnail($html) {
     $post_title = esc_attr(get_the_title());
@@ -460,3 +446,17 @@ function wph_alt_title_for_thumbnail($html) {
 }
 add_filter('post_thumbnail_html', 'wph_alt_title_for_thumbnail', 10, 1);
 //добавление alt и title для миниатюр записей end
+
+add_image_size('thumb-94', 94, 94, true); // добавляем еще один размер картинкам 94x94 с обрезкой
+
+// добавить возможность выбрать новый размер при вставке в запись
+add_image_size('content', 750, 9999);
+
+add_filter( 'image_size_names_choose', 'true_new_image_sizes' );
+
+function true_new_image_sizes( $sizes ) {
+	$addsizes = array(
+		'content' => 'На всю ширину'
+	);
+	return array_merge( $sizes, $addsizes );
+}
