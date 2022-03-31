@@ -1969,11 +1969,20 @@ br {
     letter-spacing: 0.01px;
 }
 
-.feedback__photo {
+.feedback__item_wrap_img {
     width: 94px;
-    height: 93px;
+    height: 94px;
     margin-right: 9px;
     border-radius: 50px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.feedback__item_wrap_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .feedback__name {
