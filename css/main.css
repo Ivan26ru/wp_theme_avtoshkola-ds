@@ -1860,11 +1860,13 @@ br {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .place__item {
     display: block;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 .place__item_wrap_img {
