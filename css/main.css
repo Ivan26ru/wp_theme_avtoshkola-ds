@@ -1186,15 +1186,17 @@ br {
     width: 207px !important;
     height: 285px;
     margin: 10px;
-    border-radius: 13px;
     background: #C4C4C4;
     box-shadow: 0 0 5px 3px rgb(0 0 0 / 8%);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .license__item img {
     width: 100%;
     height: 100%;
-    border-radius: 20px
+    object-fit: cover;
+    object-position: center;
 }
 
 /*----------------------------------------Instructors---------------------------*/
