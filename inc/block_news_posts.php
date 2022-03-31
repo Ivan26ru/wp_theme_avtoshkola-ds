@@ -24,9 +24,9 @@
 				<div class="new__item">
 					<a href="<?php the_permalink() ?>">
 						<div class="new__photo">
-							<div id="cat-image-miniature">
+							<div class="new__photo_wrap_img">
 								<?php if (has_post_thumbnail()) {
-									the_post_thumbnail();
+									the_post_thumbnail('thumb-150');
 								} else { ?>
 									<img src="<?php bloginfo('template_directory'); ?>/img/dont.png" alt="<?php the_title(); ?>"/>
 								<?php } ?>

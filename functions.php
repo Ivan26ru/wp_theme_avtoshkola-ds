@@ -448,6 +448,7 @@ add_filter('post_thumbnail_html', 'wph_alt_title_for_thumbnail', 10, 1);
 //добавление alt и title для миниатюр записей end
 
 add_image_size('thumb-94', 94, 94, true); // добавляем еще один размер картинкам 94x94 с обрезкой
+add_image_size('thumb-150', 150, 150, true); // добавляем еще один размер картинкам 94x94 с обрезкой
 add_image_size('lic-207x285', 207, 285, true);
 add_image_size('place-270x152', 270, 152, true);
 add_image_size('instructors-173x173', 173, 173, true);
