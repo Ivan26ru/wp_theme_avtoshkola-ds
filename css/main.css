@@ -751,11 +751,11 @@ br {
 }
 
 .range__part_wrap_img {
+    overflow: hidden;
     width: 94px;
     height: 94px;
     margin-bottom: 7px;
     border-radius: 12px;
-    overflow: hidden;
 }
 
 .range__part_wrap_img img {
@@ -1183,13 +1183,13 @@ br {
 }
 
 .license__item {
+    overflow: hidden;
     width: 207px !important;
     height: 285px;
     margin: 10px;
+    border-radius: 20px;
     background: #C4C4C4;
     box-shadow: 0 0 5px 3px rgb(0 0 0 / 8%);
-    border-radius: 20px;
-    overflow: hidden;
 }
 
 .license__item img {
@@ -1867,11 +1867,19 @@ br {
     color: #fff;
 }
 
-.place__item img {
+.place__item_wrap_img {
     width: 270px;
     height: 152px;
     margin-bottom: 10px;
     border-radius: 18px;
+    overflow: hidden;
+}
+
+.place__item_wrap_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
