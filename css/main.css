@@ -652,7 +652,7 @@ br {
     width: 39px;
     height: 40px;
     content: '';
-    background: url("../img/surch.svg") top center / cover;
+    background: url("../img/search.png") top center / cover;
 }
 
 .face__title {

@@ -30,7 +30,7 @@
 		</div>
 
 		<div class="sidebar__contact">
-			<img src="<?php bloginfo('template_directory')?>/img/map-littel.png" title="Карта" alt="Карта" class="sidebar__map"/>
+			<img src="<?php bloginfo('template_directory')?>/img/map-littel.jpg" title="Карта" alt="Карта" class="sidebar__map"/>
 			<p class="sidebar__place">Центральный офис: Москва, ул. Степана Супруна дом 4</p>
 			<a href="tel:89995991615" class="sidebar__phone">
 				<p>8-999-599-1615</p>
