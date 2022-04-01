@@ -171,7 +171,7 @@ Template Post Type: post, page, product
 		<div class="rank">
 			<p class="rank__title">Категории транспортных средств</p>
 			<div class="rank__cont">
-				<div class="rank__part">
+				<div class="rank__part rank__part_img">
 					<img src="<?php the_field('rank_img', 'option'); ?>" title="Категории транспортных средств" alt="Категории транспортных средств"/>
 				</div>
 				<div class="rank__part block_text_content">

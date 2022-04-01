@@ -1856,10 +1856,15 @@ br {
 
 .rank__part {
     /*display: block;*/
-    overflow: hidden;
-    max-width: 530px;
+
     margin-right: 26px;
+}
+
+.rank__part_img{
+    overflow: hidden;
     border-radius: 36px;
+    width: 530px;
+    flex-shrink: 0;
 }
 
 .rank__part img {
@@ -2521,6 +2526,11 @@ br {
     .container,
     .wrap {
         width: 540px;
+    }
+
+    .rank__part_img{
+        width: auto;
+        margin-right: 0;
     }
 
     .form_map {
