@@ -784,6 +784,10 @@ br {
     flex-wrap: wrap
 }
 
+.range__container{
+    margin:0 -10px;
+}
+
 .range__cont {
     margin-bottom: 18px;
 }
@@ -791,8 +795,9 @@ br {
 .range__item {
     position: relative;
     display: flex;
-    width: 362px;
+    /*width: 362px;*/
     height: 138px;
+    margin: 0 10px;
     margin-bottom: 5px;
     padding: 14px 10px 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
