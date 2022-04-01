@@ -456,12 +456,14 @@ add_image_size('instructors-173x173', 173, 173, true);
 
 // добавить возможность выбрать новый размер при вставке в запись
 add_image_size('content', 750, 9999);
+add_image_size('wrap_width', 1142, 9999);
 
 add_filter( 'image_size_names_choose', 'true_new_image_sizes' );
 
 function true_new_image_sizes( $sizes ) {
 	$addsizes = array(
-		'content' => 'На всю ширину'
+		'content' => 'Ширина записи',
+		'wrap_width' => 'Ширина сайта'
 	);
 	return array_merge( $sizes, $addsizes );
 }
