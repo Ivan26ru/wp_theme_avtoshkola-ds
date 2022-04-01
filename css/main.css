@@ -910,7 +910,7 @@ br {
     z-index: 2;
     padding: 30px 0 25px;
     text-align: center;
-    background: url(../img/serv.png) center center / cover;
+    background: url(../img/serv.jpg) center center / cover;
 }
 
 .serv__item {
@@ -1015,7 +1015,7 @@ br {
 
 .more-information {
     padding: 45px 0 35px;
-    background: url("../img/more.png") top center / cover;
+    background: url("../img/more.jpg") top center / cover;
 }
 
 .more-info {
@@ -1085,7 +1085,7 @@ br {
 .offers {
     padding: 32px 0;
     text-align: center;
-    background: url(../img/special.png) center center / cover;
+    background: url('../img/special.jpg') center center / cover;
 }
 
 .offer__title {
@@ -1216,14 +1216,14 @@ br {
 }
 
 .instru__item_wrap_img {
+    overflow: hidden;
     width: 173px;
     height: 173px;
     margin-bottom: 10px;
     border-radius: 100%;
-    overflow: hidden;
 }
 
-.instru__item_wrap_img img{
+.instru__item_wrap_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1241,7 +1241,7 @@ br {
 }
 
 .faces {
-    background: url("../img/map-fon-2.png") top center / cover;
+    background: url("../img/map-fon-2.jpg") top center / cover;
 }
 
 
@@ -1567,14 +1567,14 @@ br {
 }
 
 .new__photo_wrap_img {
+    overflow: hidden;
     width: 150px;
     height: 150px;
     border-radius: 100%;
     filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.5));
-    overflow: hidden;
 }
 
-.new__photo_wrap_img img{
+.new__photo_wrap_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1840,6 +1840,7 @@ br {
 .rank__cont {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .rank__cont p {
@@ -1852,12 +1853,20 @@ br {
     text-align: center;
 }
 
-.rank__part img {
-    display: block;
-    width: 531px;
-    height: 321px;
+
+.rank__part {
+    /*display: block;*/
+    overflow: hidden;
+    max-width: 530px;
     margin-right: 26px;
     border-radius: 36px;
+}
+
+.rank__part img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .rank__part p {
@@ -1874,23 +1883,23 @@ br {
 
 .place__cont {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
-    flex-wrap: wrap;
 }
 
 .place__item {
     display: block;
-    color: #fff;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .place__item_wrap_img {
+    overflow: hidden;
     width: 270px;
     height: 152px;
     margin-bottom: 10px;
     border-radius: 18px;
-    overflow: hidden;
 }
 
 .place__item_wrap_img img {
@@ -1986,15 +1995,15 @@ br {
 }
 
 .feedback__item_wrap_img {
+    overflow: hidden;
+    flex-shrink: 0;
     width: 94px;
     height: 94px;
     margin-right: 9px;
     border-radius: 50px;
-    overflow: hidden;
-    flex-shrink: 0;
 }
 
-.feedback__item_wrap_img img{
+.feedback__item_wrap_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2029,7 +2038,7 @@ br {
 
 #blurbs-one {
     padding: 20px 0;
-    background: url("../img/baner-one.png") top center / cover;
+    background: url("../img/baner-one.jpg") top center / cover;
 }
 
 #blurbs-one .blurb__up {
