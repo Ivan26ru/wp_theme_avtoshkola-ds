@@ -1095,7 +1095,7 @@ br {
 
 .offer__item {
     position: relative;
-    width: 351px;
+    width: 352px;
     height: 337px;
     margin-bottom: 20px;
     padding: 15px;
@@ -1113,18 +1113,26 @@ br {
     width: 73px;
     height: 73px;
     content: '';
-    background: url(../img/fire.svg) center center / cover;
+    background: url('../img/fire.svg') center center / cover;
 }
 
 .offer__item:hover {
     background: rgba(196, 196, 196, 0.4);
 }
 
-.offer__photo {
-    width: 100%;
-    height: 134px;
+.offer__item_wrap_img {
+    max-width: 320px;
+    height: 135px;
     margin-bottom: 12px;
     border-radius: 11px;
+    overflow: hidden;
+}
+
+.offer__item_wrap_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .offer__text {
