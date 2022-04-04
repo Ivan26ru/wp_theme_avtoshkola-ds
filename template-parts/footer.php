@@ -47,9 +47,7 @@
 			</div>
 			<div class="down__cont">
 				<div class="down__item down__item_name">
-					<a href="https://avtoshkola-ds.ru/ceny/">
-						Спецпредложения
-					</a>
+					<a href="https://avtoshkola-ds.ru/ceny/">Обучение</a>
 				</div>
 				<?php wp_nav_menu([
 						'theme_location' => 'footer-3',

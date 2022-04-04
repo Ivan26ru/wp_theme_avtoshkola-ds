@@ -82,7 +82,7 @@
 						<div class="hc_line1_wrap_img">
 							<img src="<?php bloginfo('template_directory') ?>/img/lisens-2.png" title="Лицензия" alt="Лицензия">
 						</div>
-						Пишем Лицензия № 036152</a>
+						Лицензия № 036152</a>
 				</div>
 				<div class="hc_line2">
 					<?php wp_nav_menu([
