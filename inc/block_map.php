@@ -16,6 +16,10 @@
 		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 100%"></div>
 		<script>
 			function <?php echo $yandexMapInit ?>() {
+				icon_fake_style = {
+					preset: 'islands#blueCircleDotIconWithCaption',
+					iconColor: 'rgba(115,81,132,0.84)'
+				};
 				var myMap = new ymaps.Map(<?php echo $yandexMapAttrId ?>, {
 					center: [55.76, 37.40],
 					zoom: 10
@@ -25,6 +29,47 @@
 
 				// Создаем геообъект с типом геометрии "Точка".
 				myMap.geoObjects
+
+						.add(new ymaps.Placemark([55.7931601, 37.0409426], {
+							// iconCaption: '1',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.7881601, 37.5409426], {
+							// iconCaption: '2',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.7469135, 37.5376734], {
+							// iconCaption: '3',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.7069135, 37.4076734], {
+							// iconCaption: '4',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.7769135, 37.3576734], {
+							// iconCaption: '5',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.8369135, 37.3776734], {
+							// iconCaption: '6',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.7969135, 37.4676734], {
+							// iconCaption: '7',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.8569135, 37.6676734], {
+							// iconCaption: '8',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.7569135, 37.6876734], {
+							// iconCaption: '9',
+							//balloonContent: '//',
+						}, icon_fake_style))
+						.add(new ymaps.Placemark([55.8269135, 37.7676734], {
+							// iconCaption: '10',
+							//balloonContent: '//',
+						}, icon_fake_style))
 
 				<?php $args = array(
 						'post_type' => 'avtoshkola',
