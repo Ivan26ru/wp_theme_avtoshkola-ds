@@ -1038,7 +1038,7 @@ br {
 
 .more-info__title {
     font-size: 25px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -1078,7 +1078,7 @@ br {
 .more-info__text {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .more-info__text:before {
