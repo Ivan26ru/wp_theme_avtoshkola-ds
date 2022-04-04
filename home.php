@@ -54,7 +54,7 @@ Template Post Type: post, page, product
 	<div class="container">
 		<div class="video">
 			<p class="video__title title">Обучение и получение прав</p>
-			<?php echo do_shortcode("[theme_video_shablon metka=\"obuchenie_i_poluchenie_prav\"]"); ?>
+			<?php echo do_shortcode("[theme_video_shablon metka=\"obuchenie_i_poluchenie_prav\" margin_bottom=\"0\"]"); ?>
 		</div>
 	</div>
 </section>
