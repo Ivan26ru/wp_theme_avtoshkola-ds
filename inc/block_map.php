@@ -30,7 +30,7 @@
 				// Создаем геообъект с типом геометрии "Точка".
 				myMap.geoObjects
 
-						.add(new ymaps.Placemark([55.7931601, 37.0409426], {
+						.add(new ymaps.Placemark([55.7331601, 37.4309426], {
 							// iconCaption: '1',
 							//balloonContent: '//',
 						}, icon_fake_style))
