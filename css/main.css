@@ -1078,7 +1078,7 @@ br {
 .more-info__text {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .more-info__text:before {
