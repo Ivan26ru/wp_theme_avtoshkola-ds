@@ -50,7 +50,9 @@
 		});
 	</script>
 	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/86930517" style="position:absolute; left:-9999px;" title="alt="Яндекс метрика"" alt="Яндекс метрика"/></div>
+		<div>
+			<img src="https://mc.yandex.ru/watch/86930517" style="position:absolute; left:-9999px;" title="alt=" Яндекс метрика"" alt="Яндекс метрика"/>
+		</div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
 	<meta name="yandex-verification" content="949336b0486bc093"/>
@@ -94,10 +96,10 @@
 			</div>
 
 			<div class="menu__info">
-				<div class="menu__up">
-					<a href="tel:89995991615"><img src="<?php bloginfo('template_directory') ?>/img/telegram.svg" title="Телефон в шапке" alt="Телефон в шапке"/></a>
-					<a href="tel:89995991615"><img src="<?php bloginfo('template_directory') ?>/img/whatsap.svg" title="Телефон в шапке" alt="Телефон в шапке"/></a>
-					<a href="tel:89995991615" class="menu__tel">8-999-599-1615</a>
+				<div class="menu__up block_social">
+					<a href="tel:89995991615" class="block_social_icon"><img src="<?php bloginfo('template_directory') ?>/img/tg.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+					<a href="tel:89995991615" class="block_social_icon"><img src="<?php bloginfo('template_directory') ?>/img/ws.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+					<a href="tel:89995991615" class="menu__tel block_social_info">8-999-599-1615</a>
 				</div>
 				<p><span>с 8:00 до 20:00</span></p>
 				<a href="mailto:info@uc-avd.ru"><span>info@uc-avd.ru</span></a>

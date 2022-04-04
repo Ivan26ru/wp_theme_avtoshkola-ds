@@ -65,11 +65,11 @@
 					</div>
 				</a>
 				<p class="down__place">Москва, ул. Степана Супруна дом 4</p>
-				<a href="tel:89995991615" class="down__phone">
-					<img src="<?php bloginfo('template_directory') ?>/img/telegram.svg" title="Телефон в футере" alt="Телефон в футере"/>
-					<img src="<?php bloginfo('template_directory') ?>/img/whatsap.svg" title="Телефон в футере" alt="Телефон в футере"/>
-					<p>8-999-599-1615</p>
-				</a>
+				<div class="down__phone block_social">
+					<a href="tel:88007587702" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/tg.png" title="Телефон в подвале" alt="Телефон в подвале"/></a>
+					<a href="tel:88007587702" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/ws.png" title="Телефон в подвале" alt="Телефон в подвале"/></a>
+					<a href="tel:899959991615" class="block_social_info">8-999-599-1615</a>
+				</div>
 				<p class="down__time"> с 8:00 до 22:00</p>
 				<a href="https://avtoshkola-ds.ru/sitemap_index.xml" class="down__link down__link_map">
 					Карта сайта
