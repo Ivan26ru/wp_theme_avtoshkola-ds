@@ -23,7 +23,9 @@
 									<?php if (have_rows('auto_reting')): ?><?php while (have_rows('auto_reting')): the_row();
 										$icon = get_sub_field('auto_icon', 'option');
 										?>
-										<img src="<?php echo $icon; ?>" title="<?php echo $title; ?>" alt="<?php echo $title; ?>"/>
+										<div class="wrap_star_img feedback__down_wrap_img">
+											<img src="<?php bloginfo('template_directory'); ?>/img/star.png" title="<?php echo $title; ?>" alt="<?php echo $title; ?>"/>
+										</div>
 									<?php endwhile; ?><?php endif; ?>
 								</div>
 							</div>
