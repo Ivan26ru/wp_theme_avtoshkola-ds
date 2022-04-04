@@ -79,7 +79,6 @@
 	</div>
 	<a href="https://avtoshkola-ds.ru/sitemap_index.xml"></a>
 </footer>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnsm0lKdy5xDCUBrxDzkg2GEIf83hXbAg&callback=initMap"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/slick.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/slick.js"></script>

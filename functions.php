@@ -191,25 +191,6 @@ if (function_exists('acf_add_options_page')) {
     acf_add_options_page('Blurbs');
 }
 
-//function root_acf_format_value( $value, $post_id, $field ) {
-//
-//    $value = do_shortcode($value);
-//
-//    return $value;
-//}
-
-//add_filter('acf/format_value', 'root_acf_format_value', 10, 3);
-
- // API Карт Google
-
-function my_acf_google_map_api( $api ){
-  $api['key'] = 'AIzaSyCnsm0lKdy5xDCUBrxDzkg2GEIf83hXbAg';
-  return $api;
-}
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
-
-
-
 
 //Произвольный тип записи. Вывод на главной
 function cuspost_home_site( $query ) {
