@@ -690,7 +690,7 @@ br {
     display: block;
     width: 330px;
     height: 40px;
-    margin: 11px 0 0 !important;
+    /*margin: 11px 0 0 !important;*/
     padding: 11px;
     border-radius: 9px;
 }
@@ -2674,8 +2674,8 @@ br {
     }
 
     .face__part .btn {
-        margin-bottom: 18px !important;
-        padding: 8px;
+        /*margin-bottom: 18px !important;*/
+        /*padding: 8px;*/
     }
 
     .face__part button {
