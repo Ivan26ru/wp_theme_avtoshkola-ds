@@ -1647,6 +1647,12 @@ br {
     margin: 20px 0;
 }
 
+
+
+.ranks a,
+.texts a,
+.information a,
+.reviews a,
 .contant a {
     color: #FF8181;
 }
