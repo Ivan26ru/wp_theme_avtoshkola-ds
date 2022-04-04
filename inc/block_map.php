@@ -28,6 +28,8 @@
 
 				<?php $args = array(
 						'post_type' => 'avtoshkola',
+						'nopaging'  => true,
+
 				);
 				$query = new WP_Query($args);
 
