@@ -1,7 +1,7 @@
 <div class="sidebar">
 	<div class="sidebar__fixed" id="sidebar-fixed">
 		<div class="sidebar__one">
-			<p class="sidebar__title">Категории</p>
+			<p class="sidebar__title">О школе</p>
 			<?php wp_nav_menu([
 					'theme_location' => 'left-sidebar-1',
 					'depth'          => 2, // количество уровней вложенности
@@ -11,7 +11,7 @@
 		</div>
 
 		<div class="sidebar__two">
-			<p class="sidebar__title">Права</p>
+			<p class="sidebar__title">Категории</p>
 			<?php wp_nav_menu([
 					'theme_location' => 'left-sidebar-2',
 					'depth'          => 2, // количество уровней вложенности
@@ -20,7 +20,7 @@
 			?>
 		</div>
 		<div class="sidebar__two sidebar__list-materialy">
-			<p class="sidebar__title">Материалы</p>
+			<p class="sidebar__title">Услуги</p>
 			<?php wp_nav_menu([
 					'theme_location' => 'left-sidebar-3',
 					'depth'          => 2, // количество уровней вложенности
