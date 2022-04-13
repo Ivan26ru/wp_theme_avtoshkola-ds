@@ -449,7 +449,13 @@ function true_new_image_sizes( $sizes ) {
 	return array_merge( $sizes, $addsizes );
 }
 
-function get_url_img_is_sub_field($name_field_image_id, $img_size = 'full'){
-	$resoult = wp_get_attachment_image_url(get_sub_field($name_field_image_id), $img_size);
+function get_url_img_is_sub_field($name_field_image_id, $img_size = 'full', $img_default = '') {
+
+	if (get_sub_field($name_field_image_id)) {
+		$resoult = wp_get_attachment_image_url(get_sub_field($name_field_image_id), $img_size);
+	} else {
+		$resoult = $img_default;
+	}
+
 	return $resoult;
-}
+} ?>
