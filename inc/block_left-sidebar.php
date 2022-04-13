@@ -34,8 +34,8 @@
 				<img src="<?php bloginfo('template_directory')?>/img/map-littel.jpg" title="Карта" alt="Карта"/>
 			</div>
 			<p class="sidebar__place">Центральный офис: Москва, ул. Степана Супруна дом 4</p>
-			<a href="tel:89995991615" class="sidebar__phone">
-				<p>8-999-599-1615</p>
+			<a href="tel:89299569316" class="sidebar__phone">
+				<p>8-929-956-9316</p>
 			</a>
 			<p class="sidebar__time block_social">
 				<a href="tel:88007587702" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/tg.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>

@@ -97,9 +97,9 @@
 
 			<div class="menu__info">
 				<div class="menu__up block_social">
-					<a href="tel:89995991615" class="block_social_icon"><img src="<?php bloginfo('template_directory') ?>/img/tg.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
-					<a href="tel:89995991615" class="block_social_icon"><img src="<?php bloginfo('template_directory') ?>/img/ws.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
-					<a href="tel:89995991615" class="menu__tel block_social_info">8-999-599-1615</a>
+					<a href="tel:89299569316" class="block_social_icon"><img src="<?php bloginfo('template_directory') ?>/img/tg.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+					<a href="tel:89299569316" class="block_social_icon"><img src="<?php bloginfo('template_directory') ?>/img/ws.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+					<a href="tel:89299569316" class="menu__tel block_social_info">8-929-956-9316</a>
 				</div>
 				<p><span>с 8:00 до 20:00</span></p>
 				<a href="mailto:info@uc-avd.ru"><span>info@uc-avd.ru</span></a>
