@@ -2584,6 +2584,10 @@ br {
         width: 540px;
     }
 
+    .header_wrap_menu{
+        display: none;
+    }
+
     .rank__part_img{
         width: auto;
         margin-right: 0;
