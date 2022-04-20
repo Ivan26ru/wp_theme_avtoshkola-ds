@@ -38,8 +38,8 @@
 				<p>8-929-956-9316</p>
 			</a>
 			<p class="sidebar__time block_social">
-				<a href="tel:88007587702" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/tg.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
-				<a href="tel:88007587702" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/ws.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+				<a href="tel:89299569316" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/tg.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
+				<a href="tel:89299569316" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/ws.png" title="Телефон в шапке" alt="Телефон в шапке"/></a>
 				<span class="block_social_info">c 8:00 до 20:00</span>
 			</p>
 			<a href="mailto:info@985.su" class="sidebar__email">

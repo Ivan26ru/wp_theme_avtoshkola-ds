@@ -66,9 +66,9 @@
 				</a>
 				<p class="down__place">Москва, ул. Степана Супруна дом 4</p>
 				<div class="down__phone block_social">
-					<a href="tel:88007587702" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/tg.png" title="Телефон в подвале" alt="Телефон в подвале"/></a>
-					<a href="tel:88007587702" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/ws.png" title="Телефон в подвале" alt="Телефон в подвале"/></a>
-					<a href="tel:899959991615" class="block_social_info">8-929-956-9316</a>
+					<a href="tel:89299569316" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/tg.png" title="Телефон в подвале" alt="Телефон в подвале"/></a>
+					<a href="tel:89299569316" class="block_social_icon"><img src="<?php bloginfo('template_directory')?>/img/ws.png" title="Телефон в подвале" alt="Телефон в подвале"/></a>
+					<a href="tel:89299569316" class="block_social_info">8-929-956-9316</a>
 				</div>
 				<p class="down__time"> с 8:00 до 22:00</p>
 				<a href="https://avtoshkola-ds.ru/sitemap_index.xml" class="down__link down__link_map">
