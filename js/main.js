@@ -103,10 +103,10 @@ $('.instru__cont').slick({
   ]
 });
 
-$('.menu__burger').click(function() {
-  $('.menu__list').toggleClass('d-block');
-  $('.menu__burger span').toggleClass('active');
-})
+// $('.menu__burger').click(function() {
+//   $('.menu__list').toggleClass('d-block');
+//   $('.menu__burger span').toggleClass('active');
+// })
 
 //Отзывы
 $('.feedback__cont').slick({
