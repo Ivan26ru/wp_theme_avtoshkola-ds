@@ -51,6 +51,7 @@ if ( ! function_exists( 'right_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => 'Главное (верхнее)',
+				'mobile' => 'Мобильное меню',
 				'left-sidebar-1' => 'Левый сайтбар 1',
 				'left-sidebar-2' => 'Левый сайтбар 2',
 				'left-sidebar-3' => 'Левый сайтбар 3',
