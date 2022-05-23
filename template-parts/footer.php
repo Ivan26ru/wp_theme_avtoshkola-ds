@@ -79,6 +79,7 @@
 	</div>
 	<a href="https://avtoshkola-ds.ru/sitemap_index.xml"></a>
 </footer>
+<?php include TEMPLATEPATH . "/inc/block_mobile-line.php"; ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/slick.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/slick.js"></script>

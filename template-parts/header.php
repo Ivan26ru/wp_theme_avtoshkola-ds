@@ -118,16 +118,16 @@
 					'depth'          => 0, // количество уровней вложенности
 					'items_wrap'     => '<ul class="mobile__menu__list">%3$s</ul>'
 			]); ?>
-<!--			<div class="my_mobile_menu" id="my_mobile_menu">-->
-<!--				<ul>-->
-<!--					<li><a href="#">Цены</a></li>-->
-<!--					<li><a href="#">Обучение</a></li>-->
-<!--					<li><a href="#">Секции</a></li>-->
-<!--					<li><a href="#">Контакты</a></li>-->
-<!--					<li><a href="#">Акции</a></li>-->
-<!--					<li><a href="#">О нас</a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
+			<!--			<div class="my_mobile_menu" id="my_mobile_menu">-->
+			<!--				<ul>-->
+			<!--					<li><a href="#">Цены</a></li>-->
+			<!--					<li><a href="#">Обучение</a></li>-->
+			<!--					<li><a href="#">Секции</a></li>-->
+			<!--					<li><a href="#">Контакты</a></li>-->
+			<!--					<li><a href="#">Акции</a></li>-->
+			<!--					<li><a href="#">О нас</a></li>-->
+			<!--				</ul>-->
+			<!--			</div>-->
 		</div>
 	</div>
 </header>
